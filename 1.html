@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+<head>
+  <title>Vast Challenge</title>
+  <meta charset="utf-8">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@4.3.0/build/vega.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc8/build/vega-lite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.20.0/build/vega-embed.js"></script>
+
+  <style media="screen">
+    /* Add space between Vega-Embed links  */
+    .vega-actions a {
+      margin-right: 5px;
+    }
+  </style>
+  <style>.vega-actions {display: none}</style>
+</head>
+<body>
+    <style>.vega-actions {display: none}</style>
+  <h3>Questions<h3>
+   <p>1.Characterize the past and most recent situation with respect to chemical contamination in the Boonsong Lekagul waterways.<br> Do you see any trends of possible interest in this investigation?  Your submission for this question should contain no more than 10 images and 1000 words.
+   </p><br>
+   <h2>Single view plot across for all chemicals across location and time</h2>
+   <p>To capture the information regarding the presence of all the chemicals across the time frame and in all the locations, the horizontal map will be helpful in determining the initial chemicals to focus on, given there are over 100 various chemicals. The locations are mapped in the form of faucets. The size is the channel, marks is the point. Using the colour  
+     channel was not helpful due to huge difference between min-max values and the points were not visible.Here the mark is point and size is a channel.It is justifiable to use
+    this plot since its covers all the three attributes of time ,location and count in one frame. </p><br>
+    <p>Observing  discernible patterns in the  chemical presence  in all the locations,the following chemical were found to be through out the time period.</p>
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+        .tg .tg-vt7v{background-color:#dae8fc;color:#000000;text-align:center;vertical-align:top}
+        @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+        <div class="tg-wrap"><table class="tg">
+          <tr>
+            <td class="tg-vt7v">Ammonium</td>
+            <td class="tg-vt7v">Cadmium</td>
+            <td class="tg-vt7v">Chromium</td>
+            <td class="tg-vt7v">Lead</td>
+            <td class="tg-vt7v">Nitrates</td>
+            <td class="tg-vt7v">Sulphates</td>
+          </tr>
+          <tr>
+            <td class="tg-vt7v">Anionic Active surfactants</td>
+            <td class="tg-vt7v">Chemical Oxygen Demand(Cr)</td>
+            <td class="tg-vt7v">Copper</td>
+            <td class="tg-vt7v">Fecal Coliforms</td>
+            <td class="tg-vt7v">Orthophosphate Phosphorus</td>
+            <td class="tg-vt7v">Total Colliforms</td>
+          </tr>
+          <tr>
+            <td class="tg-vt7v">Bicarbonates</td>
+            <td class="tg-vt7v">Chemical Oxygen Demand(Mn)</td>
+            <td class="tg-vt7v">Dissolved Oxygen</td>
+            <td class="tg-vt7v">Magnesium</td>
+            <td class="tg-vt7v">Potassium</td>
+            <td class="tg-vt7v">Total Phosphorus</td>
+          </tr>
+          <tr>
+            <td class="tg-vt7v">Biochemical Oxygen</td>
+            <td class="tg-vt7v">Chlorides</td>
+            <td class="tg-vt7v">Iron</td>
+            <td class="tg-vt7v">Nickel</td>
+            <td class="tg-vt7v">Sodium</td>
+            <td class="tg-vt7v">Zinc</td>
+          </tr>
+        </table></div>
+        <p>Data for few other chemical compositions like Alachlor,Metolachlor,Dieldrin,Endrin,Oxygen Saturation,Total Dissolved Salts,Total Hardness,Aldrin are observed from year 2005 </p>
+        <p>A few more important insights can be deduced from the charts </p>
+ 
+                 <ul><li>Data for Decha,Tansanee,Achara are present from 2009 </li>
+                    <li>Higher number of samples were collected from Boonsri,Chal,Kannika and Skada</li>
+                <li>An interesting pattern can be observed for Boonsri and Kohsoom.The 
+                  following chemicals were found only in those areas in the years 2008 and 2009</li>
+                  <style type="text/css">
+                    .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+                    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+                    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+                    .tg .tg-vt7v{background-color:#dae8fc;color:#000000;text-align:center;vertical-align:top}
+                    @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+                    <div class="tg-wrap"><table class="tg">
+                      <tr>
+                        <td class="tg-vt7v">Isodrin</td>
+                        <td class="tg-vt7v">Pyrene</td>
+                        <td class="tg-vt7v">Phenanthrene</td>
+                        <td class="tg-vt7v">Naphthalene</td>
+                        <td class="tg-vt7v">Chrysene</td>
+                        <td class="tg-vt7v">Benzo(a)anthracene</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-vt7v">Anthracene</td>
+                        <td class="tg-vt7v">Acenaphthylene</td>
+                        <td class="tg-vt7v">Acenaphthene</td>
+                        <td class="tg-vt7v">Pentachlorobenzene</td>
+                        <td class="tg-vt7v">1,2,4-Trichlorobenzene</td>
+                        <td class="tg-vt7v">1,2,3-Trichlorobenzene</td>
+                      </tr>
+                    </table></div>
+                 <li>Benzo(a)pyrene,Benzo(g,h,l)perylene,Benzo(b)fluoranthene, Benzo(k)fluoranthene,PCB are the aromatic 
+                   hydro carbons which are used in Industrial units were found in traces near Boonsri and Kohsoom.</li>
+                 <li>All the heavy metals are consistently present throughout the time period.</li>
+                 <li>Water temperature seems to be recorded for all the locations regularly.</li>
+                 </ul>
+
+  <!-- Container for the visualization -->
+  <div id="visa1" style="text-align:center;">
+
+      <script>
+      // Assign the specification to a local variable vlSpec.
+      var vlSpeca1 = {
+      "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+      "width": "",
+      "height": "",
+      "data": {
+        "name": "file",
+        "url": "file.csv"
+      },
+      "mark": "point",
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "dates",
+          "type": "temporal",
+          "scale": {}
+        },
+        "y": {
+          "field": "measure",
+          "type": "nominal",
+          "scale": {
+            "rangeStep": 12
+          },
+          "sort": {"op": "mean", "field": "*"}
+        },
+        "column": {
+          "field": "location",
+          "type": "nominal"
+        },
+        "size": {
+          "aggregate": "count",
+          "field": "*",
+          "type": "quantitative"
+        }
+      },
+      "config": {
+        "line": {
+          "point": true
+        },
+        "scale": {
+          "useUnaggregatedDomain": true
+        }
+      }
+      }
+                              // Embed the visualization in the container with id `vis,
+                              vegaEmbed("#visa1", vlSpeca1);
+                           
+                  
+                              </script></div>
+  <h3>Narrowing down on the Boonsri and Kohsoom.</h3>
+  <p1>In the map shared by the Hydrology Department, the places near the point of approximate dumping are Boonsri and Kohsoom. 
+    Initial hypothesis would be to determine if there are any trends that can help to prove the hypothesis.</p1>
+       <h1>Plotting polutants for Kohsoom And Boonsri.</h1>
+       <div>
+       <table id="t01" style="margin-left: auto; margin-right: auto;">
+          <tbody>
+                    <tr>
+    <div id="vish1" style="text-align:center;">
+  
+    <script>
+    // Assign the specification to a local variable vlSpec.
+    var vlSpech1 = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "width": 500,
+    "height": 80,
+    
+    "data": {
+      "name": "file",
+      "url": "file.csv"
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        
+        "field": "dates",
+        "type": "temporal",
+        "scale": {}
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "value",
+        "type": "quantitative"
+      },
+      "column": {
+        "field": "location",
+        "type": "nominal",
+        "title": "AOX"
+      }
+    },
+    "config": {
+      "line": {
+        "point": false
+      },
+      "scale": {
+        "useUnaggregatedDomain": true
+      }
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "location",
+          "oneOf": [
+            "Boonsri",
+            "Kohsoom"
+          ]
+        }
+      },
+      {
+        "filter": {
+          "field": "measure",
+          "oneOf": [
+            "AOX"
+          ]
+        }
+      }
+    ]
+            }
+              
+            
+              // Embed the visualization in the container with id `vis,
+              vegaEmbed("#vish1", vlSpech1);
+           
+  
+              </script></div>
+  </tr>
+  <tr>
+          <div id="vish2" style="text-align:center;">
+  
+                  <script>
+                  // Assign the specification to a local variable vlSpec.
+                  var vlSpech2 = {
+                  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                  "width": 500,
+                  "height": 80,
+                  "data": {
+      "name": "file",
+      "url": "file.csv"
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        
+        "field": "dates",
+        "type": "temporal",
+        "scale": {}
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "value",
+        "type": "quantitative"
+      },
+      "column": {
+        "field": "location",
+        "type": "nominal",
+        "title": "Total Organic Carbon"
+      }
+    },
+    "config": {
+      "line": {
+        "point": false
+      },
+      "scale": {
+        "useUnaggregatedDomain": true
+      }
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "location",
+          "oneOf": [
+            "Boonsri",
+            "Kohsoom"
+          ]
+        }
+      },
+      {
+        "filter": {
+          "field": "measure",
+          "oneOf": [
+            "Total organic carbon"
+          ]
+        }
+      }
+    ]
+                          }
+                            
+                          
+                            // Embed the visualization in the container with id `vis,
+                            vegaEmbed("#vish2", vlSpech2);
+                         
+                
+                            </script></div>
+  </tr>
+  <tr>
+  
+          <div id="vish3" style="text-align:center;">
+  
+                  <script>
+                  // Assign the specification to a local variable vlSpec.
+                  var vlSpech3 = {
+                  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                  "width": 500,
+                  "height": 80,
+                  "data": {
+      "name": "file",
+      "url": "file.csv"
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        
+        "field": "dates",
+        "type": "temporal",
+        "scale": {}
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "value",
+        "type": "quantitative"
+      },
+      "column": {
+        "field": "location",
+        "type": "nominal",
+        "title": "Pyrene"
+      }
+    },
+    "config": {
+      "line": {
+        "point": false
+      },
+      "scale": {
+        "useUnaggregatedDomain": true
+      }
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "location",
+          "oneOf": [
+            "Boonsri",
+            "Kohsoom"
+          ]
+        }
+      },
+      {
+        "filter": {
+          "field": "measure",
+          "oneOf": [
+            "Aldrin"
+          ]
+        }
+      }
+    ]
+                          }
+                            
+                          
+                            // Embed the visualization in the container with id `vis,
+                            vegaEmbed("#vish3", vlSpech3);
+                         
+                
+                            </script></div>
+  
+  </tr>
+  <tr>
+          <div id="vish4" style="text-align:center;">
+  
+                  <script>
+                  // Assign the specification to a local variable vlSpec.
+                  var vlSpech4 = {
+                  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                  "width": 500,
+                  "height": 80,
+                  
+                  "data": {
+      "name": "file",
+      "url": "file.csv"
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        
+        "field": "dates",
+        "type": "temporal",
+        "scale": {}
+      },
+      "y": {
+        "aggregate": "mean",
+        "field": "value",
+        "type": "quantitative"
+      },
+      "column": {
+        "field": "location",
+        "type": "nominal",
+        "title": "Zinc"
+      }
+    },
+    "config": {
+      "line": {
+        "point": false
+      },
+      "scale": {
+        "useUnaggregatedDomain": true
+      }
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "location",
+          "oneOf": [
+            "Boonsri",
+            "Kohsoom"
+          ]
+        }
+      },
+      {
+        "filter": {
+          "field": "measure",
+          "oneOf": [
+            "Zinc"
+          ]
+        }
+      }
+    ]
+                          }
+                            
+                          
+                            // Embed the visualization in the container with id `vis,
+                            vegaEmbed("#vish4", vlSpech4);
+                         
+                
+                            </script></div>
+  </tr>
+  
+  
+  </tbody></table></div>      
+       <p1>The plot shows:
+            <ol><li> The levels of AOX at Kohsoom and Boonsri follow a similar trend with a sudden spike in 2010 in tthe areas. </li>
+                <li>The similarity in the total carbon levels indicated that artificial induction of hydro carbons.</li>
+            <li> Overall from the matching spikes in hydrocarbons and other metals like Zinc,an implication can be made that indeed there was a dumping site.
+              near Kohsoom and Boonsri.
+            </li>
+       </p1>
+<p1>The line chart used has line as mark which is very helpful in find and comparing trends of different attributes. </p1>
+<div>
+       <h1>Plotting Toxic Heavy Metals</h1>
+       <p1>The presence of heavy metals in the water can be termed as hazardous.
+         Metals like Iron, Zinc, Copper, Chromium, Manganese are required for biological metabolism
+         in trace amounts; However, their higher dose may cause toxic effects. 
+         Other metals , such as Lead, Mercury,Cadmium and Nickel are not suitable for biological functions and are positively toxic.
+        
+  </p1>
+  <p>The following plot is using all the locations as column wise faucets in  and mapped across the time period,which is effective
+    in getting insights at one go where line is a mark.  </p>
+  <table id="t02" style="margin-left: auto; margin-right: auto;">
+      <tbody>
+                <tr>
+<div id="visat1" style="text-align:center;">
+
+<script>
+// Assign the specification to a local variable vlSpec.
+var vlSpecat1 = {
+"$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+"width": 110,
+"height": 80,
+
+"data": {
+  "name": "Iron",
+  "url": "Iron.csv"
+},
+"mark": "line",
+"encoding": {
+  "x": {
+    "field": "dates",
+    "type": "temporal",
+    "scale": {}
+  },
+  "y": {
+    "aggregate": "mean",
+    "field": "value",
+    "type": "quantitative"
+  },
+  "column": {
+    "field": "location",
+    "type": "nominal",
+    "title": "Lead"
+  }
+},
+"config": {
+  "line": {
+    "point": false
+  },
+  "scale": {
+    "useUnaggregatedDomain": true
+  }
+},
+"transform": [
+  {
+    "filter": {
+      "field": "measure",
+      "oneOf": [
+        "Iron"
+      ]
+    }
+  }
+]
+        }
+          
+        
+          // Embed the visualization in the container with id `vis,
+          vegaEmbed("#visat1", vlSpecat1);
+       
+
+          </script></div>
+</tr>
+
+<tr>
+      <div id="visat4" style="text-align:center;">
+
+              <script>
+              // Assign the specification to a local variable vlSpec.
+              var vlSpecat4 = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+              "width": 110,
+              "height": 80,
+              
+              "data": {
+                "name": "Magnesium",
+                "url": "Magnesium.csv"
+              },
+              "mark": "line",
+              "encoding": {
+                "x": {
+                  "field": "dates",
+                  "type": "temporal",
+                  "scale": {}
+                },
+                "y": {
+                  "aggregate": "mean",
+                  "field": "value",
+                  "type": "quantitative"
+                },
+                "column": {
+                  "field": "location",
+                  "type": "nominal",
+                  "title": "Cadmium"
+                }
+              },
+              "config": {
+                "line": {
+                  "point": false
+                },
+                "scale": {
+                  "useUnaggregatedDomain": true
+                }
+              },
+              "transform": [
+                {
+                  "filter": {
+                    "field": "measure",
+                    "oneOf": [
+                      "Magnesium"
+                    ]
+                  }
+                }
+              ]
+                      }
+                        
+                      
+                        // Embed the visualization in the container with id `vis,
+                        vegaEmbed("#visat4", vlSpecat4);
+                     
+            
+                        </script></div>
+</tr>
+
+<tr>
+      <div id="visat6" style="text-align:center;">
+
+              <script>
+              // Assign the specification to a local variable vlSpec.
+              var vlSpecat6 = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+              "width": 110,
+              "height": 80,
+              
+              "data": {
+                "name": "Mercury",
+                "url": "Mercury.csv"
+              },
+              "mark": "line",
+              "encoding": {
+                "x": {
+                  "field": "dates",
+                  "type": "temporal",
+                  "scale": {}
+                },
+                "y": {
+                  "aggregate": "mean",
+                  "field": "value",
+                  "type": "quantitative"
+                },
+                "column": {
+                  "field": "location",
+                  "type": "nominal",
+                  "title": "Mercury"
+                }
+              },
+              "config": {
+                "line": {
+                  "point": false
+                },
+                "scale": {
+                  "useUnaggregatedDomain": true
+                }
+              },
+              "transform": [
+                {
+                  "filter": {
+                    "field": "measure",
+                    "oneOf": [
+                      "Mercury"
+                    ]
+                  }
+                }
+              ]
+                      }
+                        
+                      
+                        // Embed the visualization in the container with id `vis,
+                        vegaEmbed("#visat6", vlSpecat6);
+                     
+            
+                        </script></div> 
+</tr>
+
+
+<tr>
+
+      <div id="visat9" style="text-align:center;">
+
+              <script>
+              // Assign the specification to a local variable vlSpec.
+              var vlSpecat9 = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+              "width": 110,
+              "height": 80,
+              
+              "data": {
+                "name": "Nickel",
+                "url": "Nickel.csv"
+              },
+              "mark": "line",
+              "encoding": {
+                "x": {
+                  "field": "dates",
+                  "type": "temporal",
+                  "scale": {}
+                },
+                "y": {
+                  "aggregate": "mean",
+                  "field": "value",
+                  "type": "quantitative"
+                },
+                "column": {
+                  "field": "location",
+                  "type": "nominal",
+                  "title": "Nickel"
+                }
+              },
+              "config": {
+                "line": {
+                  "point": false
+                },
+                "scale": {
+                  "useUnaggregatedDomain": true
+                }
+              },
+              "transform": [
+                {
+                  "filter": {
+                    "field": "measure",
+                    "oneOf": [
+                      "Nickel"
+                    ]
+                  }
+                }
+              ]
+                      }
+                        
+                      
+                        // Embed the visualization in the container with id `vis,
+                        vegaEmbed("#visat9", vlSpecat9);
+                     
+            
+                        </script></div>
+
+</tr>
+</tbody></table>
+</br>
+<p1>Interesting patterns can be observed from plot. </p1><br>
+<ol>
+  <li>Kohsoom had high values for all the four metal during the period of 2005-2007 and again spikes are been observed after 2010.</li>
+  <li>Tansanee is showing interesting for Cadmium after 2010.</li>
+  <li>Somchair had higher values of Lead and Nickel in the begining years of 2000.</li>
+  <li>Decha is showing higher values In lead and Nickel recently</li>
+  <li>The spike trend for Kohsoom and Boonsri is almost similar which supports the 
+    intial argument made about the possible location of dumping site.</li>
+</ol>
+
+</div>
+
+<h1>Observing  Trends In Tansanee</h1>
+
+<p>It can be observed that other water properties/chemicals such as Chemical Oxygen Demand , Chlorides and Sulphates at 
+  Tansanee show a distinct higher baseline.The boxplot used here will effectively be able to identify the base line concentration of the value
+excluding the outliers</p>
+<!-- Container for the visualization -->
+<div id="vis7">
+
+<script>
+// Assign the specification to a local variable vlSpec.
+var vlSpec7 = {
+"$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+"description": "A vertical 2D box plot showing median, min, and max in the US population distribution of age groups in 2000.",
+"width": 1100,
+"height": 200,
+"data": {
+      "name": "file",
+      "url": "file.csv"
+    },
+"mark": {
+"type": "boxplot",
+"extent": 1.5
+},
+"encoding": {
+"y": {"field": "location","type": "ordinal"},
+"x": {
+"field": "value",
+"type": "quantitative",
+"axis": {"title": ""}
+},
+"row": {
+"field": "measure",
+"type": "nominal"
+},
+"size": {"value": 4}
+
+},
+
+"transform": [
+      {
+        "filter": {
+          "field": "measure",
+          "oneOf": [
+            "Chemical Oxygen Demand (Cr)",
+            "Chlorides",
+            "Sulphates"
+
+          ]
+        }
+      }
+    ]
+}
+
+
+// Embed the visualization in the container with id `vis,
+vegaEmbed("#vis7", vlSpec7);
+</script></div>
+<h4>Observing important chemicals across the time and locations.</h4>
+<p>For the following plots line chart is used which would make it easier to observe amd identify, trends and patterns.</p>
+    <h3>Trends in Total Nitrogen</h3>
+    <p>Presence of higher nitrogen level signifies that the industrial wastes is getting released into the water some where near by.
+      Kohsoom and Tansanee are showing clear uptrend and it is  visible  during the period of July 2014 to June 2015  </p>
+    <h1>Total Nitrogen trends</h1>
+    <div id="vis6">
+   
+            <script>
+            // Assign the specification to a local variable vlSpec.
+            var vlSpec6 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+            "width": 1100,
+            "height": 45,
+            "data": {
+              "name": "file",
+              "url": "file.csv"
+            },
+            "mark": "line",
+            "encoding": {
+              "y": {
+                "aggregate": "",
+                "field": "value",
+                "type": "quantitative",
+                "title": "",
+                "scale": {
+                  "type": "sqrt"
+                }
+              },
+              "x": {
+                "timeUnit": "yearmonthdate",
+                "field": "dates",
+                "type": "temporal",
+                "scale": {}
+              },
+              "color": {
+                "field": "location",
+                "type": "nominal"
+              },
+              "row": {
+                "field": "location",
+                "type": "nominal"
+              }
+            },
+            "config": {
+              "line": {
+                "point": false
+              },
+              "scale": {
+                "useUnaggregatedDomain": true
+              }
+            },
+            "transform": [
+              {
+                "filter": {
+                  "field": "measure",
+                  "oneOf": [
+                    "Total nitrogen"
+                  ]
+                }
+              }
+            ]
+          }
+            
+          
+            // Embed the visualization in the container with id `vis,
+            vegaEmbed("#vis6", vlSpec6);
+            </script></div>
+       <!-- Container for the visualization -->
+       <h3>Anionic Active Surfactants</h3>
+       <p>All other locations have been dormant in the same time-period whereas it is quite evident that the 
+         concentration of Anionic active surfactants is increasing in the year 2015 nearer to Kohsoom and also in the site Boonsri,
+          which are nearer to the dumping site.</p>  
+           
+           <!-- Container for the visualization -->
+           <div id="vis2">
+         
+           <script>
+           // Assign the specification to a local variable vlSpec.
+           var vlSpec2 = {
+           "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+           "width": 1100,
+           "height": 45,
+           "data": {
+             "name": "file",
+             "url": "file.csv"
+           },
+           "mark": "line",
+           "encoding": {
+             "y": {
+               "aggregate": "avg",
+               "field": "value",
+               "type": "quantitative",
+               "title": "",
+               "scale": {
+                 "type": ""
+               }
+             },
+             "x": {
+               "timeUnit": "yearmonthdate",
+               "field": "dates",
+               "type": "temporal",
+               "scale": {}
+             },
+             "color": {
+               "field": "location",
+               "type": "nominal"
+             },
+             "row": {
+               "field": "location",
+               "type": "nominal"
+             }
+           },
+           "config": {
+             "line": {
+               "point": false
+             },
+             "scale": {
+               "useUnaggregatedDomain": true
+             }
+           },
+           "transform": [
+             {
+               "filter": {
+                 "field": "measure",
+                 "oneOf": [
+                   "Anionic active surfactants"
+                 ]
+               }
+             }
+           ]
+         }
+           
+         
+           // Embed the visualization in the container with id `vis,
+           vegaEmbed("#vis2", vlSpec2);
+           </script></div>
+
+       <h1>Ammonium</h1>    
+       <p>The Ammonium has the same trend for all the other sites except for the Kohsoom and Tansanee.
+         The uptrend in both the sites is observed after 2013.  </p>
+       <div id="vis1">
+     
+       <script>
+       // Assign the specification to a local variable vlSpec.
+       var vlSpec1 = {
+       "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+       "width": 1100,
+       "height": 45,
+       "data": {
+         "name": "file",
+         "url": "file.csv"
+       },
+       "mark": "line",
+       "encoding": {
+         "y": {
+           "aggregate": "avg",
+           "field": "value",
+           "type": "quantitative",
+           "title": "",
+           "scale": {
+             "type": "sqrt"
+           }
+         },
+         "x": {
+           "timeUnit": "yearmonthdate",
+           "field": "dates",
+           "type": "temporal",
+           "scale": {}
+         },
+         "color": {
+           "field": "location",
+           "type": "nominal"
+         },
+         "row": {
+           "field": "location",
+           "type": "nominal"
+         }
+       },
+       "config": {
+         "line": {
+           "point": true
+         },
+         "scale": {
+           "useUnaggregatedDomain": true
+         }
+       },
+       "transform": [
+         {
+           "filter": {
+             "field": "measure",
+             "oneOf": [
+               "Ammonium"
+             ]
+           }
+         }
+       ]
+     }
+    
+     
+       // Embed the visualization in the container with id `vis,
+       vegaEmbed("#vis1", vlSpec1);
+       </script></div>
+<p>By stepping through the chemical filters, we infer higher baselines at Kohsoom are also found for Orthophosphorus-Phosphorus with peaks in December 2013.
+        Total Phosphorus as well, follows a very similar uptrend at Kohsoom, with an average twice over the baseline of all other locations.</p><br>
+
+<h3>Chlorodinine</h3>
+<p>The levels of Chlorodinine have all significantly dropped in recent years. Despite a uniform drop across all locations, Kohsoom alone experiences a spike 
+    in it in June 2016 as seen below</p>
+    <h1>Chlorodinine trends in recent years</h1>
+    <div id="vis3">
+   
+            <script>
+            // Assign the specification to a local variable vlSpec.
+            var vlSpec3 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+            "width": 1100,
+            "height": 45,
+            "data": {
+              "name": "file",
+              "url": "file.csv"
+            },
+            "mark": "line",
+            "encoding": {
+              "y": {
+                "aggregate": "",
+                "field": "value",
+                "type": "quantitative",
+                "title": "",
+                "scale": {
+                  "type": "sqrt"
+                }
+              },
+              "x": {
+                "timeUnit": "yearmonthdate",
+                "field": "dates",
+                "type": "temporal",
+                "scale": {}
+              },
+              "color": {
+                "field": "location",
+                "type": "nominal"
+              },
+              "row": {
+                "field": "location",
+                "type": "nominal"
+              }
+            },
+            "config": {
+              "line": {
+                "point": true
+              },
+              "scale": {
+                "useUnaggregatedDomain": true
+              }
+            },
+            "transform": [
+              {
+                "filter": {
+                  "field": "measure",
+                  "oneOf": [
+                    "Chlorodinine"
+                  ]
+                }
+              }
+            ]
+          }
+            
+          
+            // Embed the visualization in the container with id `vis,
+            vegaEmbed("#vis3", vlSpec3);
+            </script></div>
+            <h3>Magnesium</h3>
+            <p>Magnesium is one the toxic metal that can be found in contaminated water polluted by the industrial waste.
+              In all the six regions of Boonsri,Busarkhan,Chai,Kannika,Kohsoom and Somchair,an uptrend is observed afer Feb 2011.
+
+            </p>
+            <h1>Magnesium trends</h1>
+            <div id="vis4">
+   
+                    <script>
+                    // Assign the specification to a local variable vlSpec.
+                    var vlSpec4 = {
+                    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                    "width": 1100,
+                    "height": 45,
+                    "data": {
+                      "name": "file",
+                      "url": "file.csv"
+                    },
+                    "mark": "line",
+                    "encoding": {
+                      "y": {
+                        "aggregate": "",
+                        "field": "value",
+                        "type": "quantitative",
+                        "title": "",
+                        "scale": {
+                          "type": "sqrt"
+                        }
+                      },
+                      "x": {
+                        "timeUnit": "yearmonthdate",
+                        "field": "dates",
+                        "type": "temporal",
+                        "scale": {}
+                      },
+                      "color": {
+                        "field": "location",
+                        "type": "nominal"
+                      },
+                      "row": {
+                        "field": "location",
+                        "type": "nominal"
+                      }
+                    },
+                    "config": {
+                      "line": {
+                        "point": true
+                      },
+                      "scale": {
+                        "useUnaggregatedDomain": true
+                      }
+                    },
+                    "transform": [
+                      {
+                        "filter": {
+                          "field": "measure",
+                          "oneOf": [
+                            "Magnesium"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                    
+                  
+                    // Embed the visualization in the container with id `vis,
+                    vegaEmbed("#vis4", vlSpec4);
+                    </script></div>
+
+
+
+<h3>The seasonal nature of Water Temperature.</h3>
+<p>It can be observed that the temperature of water goes up by 4-5 C during the months of June, 
+    July and August throughout the waterways.Here the months are used as faucets which averages 
+    the value accordingly.</p>
+
+    
+      <h1>Water Temperature in Seasonal Pattern</h1>
+    
+      <!-- Container for the visualization -->
+      <div id="vis8">
+    
+      <script>
+      // Assign the specification to a local variable vlSpec.
+      var vlSpec8 = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+      
+      "width": 100,
+      "height": 400,
+      "data": {
+                  "name": "water",
+                  "url": "water.csv"
+                },
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "dates",
+          "type": "temporal",
+          "scale": {}
+        },
+        "y": {
+          "field": "value",
+          "aggregate": "mean",
+          "type": "quantitative",
+          "scale": {}
+        },
+        "column": {
+          "timeUnit": "month",
+          "field": "dates",
+          "type": "temporal"
+        }
+      },
+      "config": {
+        "line": {
+          "point": true
+        },
+        "scale": {
+          "useUnaggregatedDomain": true
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "measure",
+            "oneOf": [
+              "Water temperature"
+            ]
+          }
+        }
+      ]
+    }
+      
+    
+      // Embed the visualization in the container with id `vis,
+      vegaEmbed("#vis8", vlSpec8);
+      </script></div>
+<p>After Observing a number of plots it can be inferred that the dumping site was indeed in
+    Kohsoom and the recent uptrends in Tansanee suggest that a new dumping site is create some where around Tansanee.</p></br>
+
+<h3>
+        2.What anomalies do you find in the waterway samples dataset?  How do these affect your analysis of potential problems to
+         the environment? Is the Hydrology Department collecting sufficient data to understand the comprehensive situation across the 
+         Preserve? What changes would you propose to make in the sampling approach to best understand the situation? Your submission 
+         for this question should contain no more than 6 images and 500 words.</h3>
+
+         <h3> Chemical samples</h3>
+
+         <p>The heatmap is used to show that only a few of the total chemicals  had measurements in 
+            all years of the sampling.And how few chemicals were present only for couple of years.Here point is used as marks and colour as channel.  </p>
+      
+
+           <h3> Heatmap of chemicals  records.</h3>
+           <div id="vis9">
+
+               <script>
+               // Assign the specification to a local variable vlSpec.
+               var vlSpec9 = {
+               "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+               "width": 900,
+               "height": 1500,
+               "data": {
+                 "name": "file",
+                 "url": "file.csv"
+               },
+               "mark": "point",
+               "encoding": {
+                 "x": {
+                   "field": "dates",
+                   "type": "temporal",
+                   "scale": {},
+                   "axis": {
+                     "orient": "top"
+                   }
+                 },
+                 "y": {
+                   "field": "measure",
+                   "type": "nominal",
+                   "scale": {
+                     "rangeStep": 12
+                   },
+                   "sort": {"op": "mean", "field": "*"}
+                 },
+                 "color": {
+                   "aggregate": "count",
+                   "field": "*",
+                   "type": "quantitative",
+                   "scale": {
+                     "scheme": "orangered"
+                   },
+                   "legend": {
+                     "type": "gradient"
+                   }
+                 }
+               },
+               "config": {
+                 "line": {
+                   "point": true
+                 },
+                 "scale": {
+                   "useUnaggregatedDomain": true
+                 }
+               }
+             
+               
+                       }
+                         
+                       
+                         // Embed the visualization in the container with id `vis,
+                         vegaEmbed("#vis9", vlSpec9);
+                      
+             
+                         </script></div>
+         <p> Each year different chemicals are captured from the water sample gathered which is approximately around 40 
+            but in the years 2008 and 2009 there were many new chemicals captured.But to identify the trend of these chemicals,there is
+            no data of them before or after the time-period.It can also be inferred that those particular chemicals were collected for some specific
+            research purpose ,only for those years.
+           </p>
+
+<p>There were missing samples across locations for some the chemicals like Sodium,Pottasium,Mercury,Arsenic,Fecal coliforms and AOX between the year 2003 and 2006.</p>
+<div id="visak1" style="text-align:center;">
+
+    <script>
+    // Assign the specification to a local variable vlSpec.
+    var vlSpecak1 = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "width": "1000",
+    "height": "",
+    "data": {
+      "name": "file",
+      "url": "file.csv"
+    },
+    "mark": "point",
+    "encoding": {
+      "x": {
+        "field": "dates",
+        "type": "temporal",
+        "scale": {},
+        "axis": {
+          "orient": "top"
+        }
+      },
+      "y": {
+        "field": "measure",
+        "type": "nominal",
+        "scale": {
+          "rangeStep": 12
+        }
+      },
+      "row": {
+        "field": "location",
+        "type": "nominal"
+      }
+    },
+    "config": {
+      "line": {
+        "point": true
+      },
+      "scale": {
+        "useUnaggregatedDomain": true
+      }
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "measure",
+          "oneOf": [
+            "Arsenic",
+            "AOX",
+            "Sodium",
+            "Potassium",
+            "Mercury",
+            "Fecal coliforms"
+          ]
+        }
+      },
+      {
+        "filter": {
+          "field": "location",
+          "oneOf": [
+            "Boonsri",
+            "Busarakhan",
+            "Chai",
+            "Kannika",
+            "Sakda",
+            "Somchair"
+          ]
+        }
+      }
+    ]
+    }
+                            // Embed the visualization in the container with id `vis,
+                            vegaEmbed("#visak1", vlSpecak1);
+                         
+                
+                            </script></div>
+
+<p1>During the period of 2011-2012 the readings are missing for all the locations for Total Hardness</p1>
+<h2>Total Hardness Missing Data</h2>
+<div id="vis10">
+
+   <script>
+   // Assign the specification to a local variable vlSpec.
+   var vlSpec10 = {
+   "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+   "width": 1100,
+ "height": 45,
+   "data": {
+     "name": "file",
+     "url": "file.csv"
+   },
+   "mark": "bar",
+   "encoding": {
+     "x": {
+       "timeUnit": "yearmonthdate",
+       "field": "dates",
+       "type": "temporal",
+       "scale": {}
+     },
+     "y": {
+       "field": "value",
+       "type": "quantitative",
+       "scale": {}
+     },
+     "row": {
+       "field": "location",
+       "type": "nominal"
+     }
+   },
+   "config": {
+     "line": {
+       "point": true
+     },
+     "scale": {
+       "useUnaggregatedDomain": true
+     }
+   },
+   "transform": [
+     {
+       "filter": {
+         "field": "measure",
+         "oneOf": [
+           "Total hardness"
+         ]
+       }
+     }
+   ]
+           }
+                      
+             // Embed the visualization in the container with id `vis,
+             vegaEmbed("#vis10", vlSpec10);
+          
+ 
+             </script></div>
+
+         <h3> August 15 2003 </h3>
+         <p1>On 15 August 2003 there was a spike in  Chromium, Manganese, Copper and Iron just for one day in several locations.
+             This might probably due to a wrong calibration of the measuring equipment. This is noticed to be happening at every location except Boonsri.</p1>
+             <table style="margin-left: auto; margin-right: auto;">
+                <tbody>
+                          <tr>
+                                  <td> 
+              
+                <div id="visi">
+              
+                <script>
+                // Assign the specification to a local variable vlSpec.
+                var vlSpeci = {
+                "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+              
+                "data": {
+                  "name": "file",
+                            "url": "file.csv"
+                },
+                "title":"Chromium",
+                "mark": "line",
+                "encoding": {
+                  "x": {
+                    "field": "dates",
+                    "type": "temporal",
+                    "scale": {}
+                  },
+                  "y": {
+                    "field": "value",
+                    "aggregate": "avg",
+                    "type": "quantitative",
+                    "scale": {
+                      "type": ""
+                    }
+                  },
+              
+                },
+                "config": {
+                  "line": {
+                    "point": false
+                  },
+                  "scale": {
+                    "useUnaggregatedDomain": false
+                  }
+                },
+                "transform": [
+                  {
+                    "filter": {
+                      "field": "measure",
+                      "oneOf": [
+                        "Chromium"
+              
+                      ]
+                    }
+                  }
+                ]
+              }
+                
+              
+                // Embed the visualization in the container with id `vis,
+                vegaEmbed("#visi", vlSpeci);
+                </script></div> </td>
+                <td> 
+                  <div id="visi1">
+              
+                      <script>
+                      // Assign the specification to a local variable vlSpec.
+                      var vlSpeci1 = {
+                      "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                    
+                      "data": {
+                        "name": "file",
+                        "url": "file.csv"
+                      },
+                      "title":"Copper",
+                      "mark": "line",
+                      "encoding": {
+                        "x": {
+                          "field": "dates",
+                          "type": "temporal",
+                          "scale": {}
+                        },
+                        "y": {
+                          "field": "value",
+                          "aggregate": "avg",
+                          "type": "quantitative",
+                          "scale": {
+                            "type": ""
+                          }
+                        },
+              
+                      },
+                      "config": {
+                        "line": {
+                          "point": false
+                        },
+                        "scale": {
+                          "useUnaggregatedDomain": false
+                        }
+                      },
+                      "transform": [
+                        {
+                          "filter": {
+                            "field": "measure",
+                            "oneOf": [
+              
+                              "Copper"
+              
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                      
+                    
+                      // Embed the visualization in the container with id `vis,
+                      vegaEmbed("#visi1", vlSpeci1);
+                      </script></div>
+                     
+                      </td>
+                  </tr>
+                  <tr>
+                          <td> 
+                <div id="visi2">
+              
+                  <script>
+                  // Assign the specification to a local variable vlSpec.
+                  var vlSpeci2 = {
+                  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                
+                  "data": {
+                    "name": "file",
+                              "url": "file.csv"
+                  },
+                  "title":"Iron",
+                  "mark": "line",
+                  "encoding": {
+                    "x": {
+                      "field": "dates",
+                      "type": "temporal",
+                      "scale": {}
+                    },
+                    "y": {
+                      "field": "value",
+                      "aggregate": "avg",
+                      "type": "quantitative",
+                      "scale": {
+                        "type": ""
+                      }
+                    },
+              
+                  },
+                  "config": {
+                    "line": {
+                      "point": false
+                    },
+                    "scale": {
+                      "useUnaggregatedDomain": false
+                    }
+                  },
+                  "transform": [
+                    {
+                      "filter": {
+                        "field": "measure",
+                        "oneOf": [
+              
+                          "Iron"
+              
+                        ]
+                      }
+                    }
+                  ]
+                }
+                  
+                
+                  // Embed the visualization in the container with id `vis,
+                  vegaEmbed("#visi2", vlSpeci2);
+                  </script></div></td>
+              
+              <td> 
+                        <div id="visi3">
+              
+                          <script>
+                          // Assign the specification to a local variable vlSpec.
+                          var vlSpeci3 = {
+                          "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                        
+                          "data": {
+                            "name": "file",
+                                      "url": "file.csv"
+                          },
+                          "title":"Manganese",
+                          "mark": "line",
+                          "encoding": {
+                            "x": {
+                              "field": "dates",
+                              "type": "temporal",
+                              "scale": {}
+                            },
+                            "y": {
+                              "field": "value",
+                              "aggregate": "avg",
+                              "type": "quantitative",
+                              "scale": {
+                                "type": ""
+                              }
+                            },
+              
+                          },
+                          "config": {
+                            "line": {
+                              "point": false
+                            },
+                            "scale": {
+                              "useUnaggregatedDomain": true
+                            }
+                          },
+                          "transform": [
+                            {
+                              "filter": {
+                                "field": "measure",
+                                "oneOf": [
+                      
+                                "Manganese"
+                      
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                          
+                        
+                          // Embed the visualization in the container with id `vis,
+                          vegaEmbed("#visi3", vlSpeci3);
+                       
+              
+                          </script></div>
+              
+              
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+
+       
+<h3>Coverage of the sampling</h3>
+ 
+<p>It can be observed from the plot that the data coverage is not appropriate which means the hydrology department
+ has not collected comprehensive data across the preserve. It is also affected by the fact that Achara, 
+ Decha and Tansanee started to be measured only from 2009.</p>
+ 
+<p>4 segments are visible from an analysis of the total number of records. (
+  [Chai & Boonsri], [Kannika & Sakda], [ Kohsoom, Somchair & Busarkhan], [Achara, Decha & Tansanee]).</p>  
+  <div id="vis11" style="text-align:center;">
+
+      <script>
+      // Assign the specification to a local variable vlSpec.
+      var vlSpec11 = {
+      "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+      "width": 1000,
+      "height": 500,
+      "data": {
+          "name": "file",
+        "url": "file.csv"
+      },
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "timeUnit": "year",
+          "field": "dates",
+          "type": "temporal",
+          "scale": {}
+        },
+        "y": {
+          "aggregate": "count",
+          "field": "*",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "location",
+          "type": "nominal"
+        }
+      },
+      "config": {
+        "line": {
+          "point": true
+        },
+        "scale": {
+          "useUnaggregatedDomain": true
+        }
+      }
+              }
+                
+              
+                // Embed the visualization in the container with id `vis,
+                vegaEmbed("#vis11", vlSpec11);
+             
+    
+                </script></div>
+
+<h3>3.After reviewing the data, do any of your findings cause particular concern for the Pipit or other wildlife? Would you suggest any changes in the sampling strategy to better understand the waterways situation 
+  in the Preserve? Your submission for this question should contain no more than 6 images and 500 words </h3>        
+   <h3>1.Oxygen Saturation Levels </h3>
+   <p>Birds and wildlife feed off water, and Oxygen is essential for any living organism, 
+     but Oxygen saturation in water is clearly depleting lower near Kohsoom and Tansanee.</p> 
+     <p>The oxygen saturation at Kannika,Busarakhan and Somchair was very low in the begining but it gradually increased.
+       The line chart here is helpful in identifying the trens from the past to recent times. </p>
+     <div id="vis12" style="text-align:center;">
+
+        <script>
+        // Assign the specification to a local variable vlSpec.
+        var vlSpec12 = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+        "width": 800,
+        "height": 500,
+        "data": {
+          "name": "file",
+          "url": "file.csv"
+        },
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "timeUnit": "yearmonthdate",
+            "field": "dates",
+            "type": "temporal",
+            "scale": {}
+          },
+          "y": {
+            "aggregate": "mean",
+            "field": "value",
+            "type": "quantitative",
+            "scale": {}
+          },
+          "color": {
+            "field": "location",
+            "type": "nominal"
+          }
+        },
+        "config": {
+          "line": {
+            "point": true
+          },
+          "scale": {
+            "useUnaggregatedDomain": true
+          }
+        },
+        "transform": [
+          {
+            "filter": {
+              "field": "measure",
+              "oneOf": [
+                "Oxygen saturation"
+              ]
+            }
+          }
+        ]
+                }
+                  
+                
+                  // Embed the visualization in the container with id `vis,
+                  vegaEmbed("#vis12", vlSpec12);
+               
+      
+                  </script></div>    
+  <h3>2.Release of hot effluents</h3>  
+  <p>The trend line shows an uptrend at Tansanee as compared to the other locations. The temperature spike of 34C was in August 2016.
+    The possible reason for the temperature spike may be a factory which uses Tansanee as a water source for their cooling towers, 
+    and discharges hot effluents onto the water.
+</p> 
+  <h2>Water temperature trends</h2>
+  <div id="vis13" style="text-align:center;">
+
+      <script>
+      // Assign the specification to a local variable vlSpec.
+      var vlSpec13 = {
+      "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+      "width": 800,
+      "height": 100,
+      
+      "data": {
+        "name": "water",
+        "url": "water.csv"
+      },
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "timeUnit": "yearmonthdate",
+          "field": "dates",
+          "type": "temporal",
+          "scale": {}
+        },
+        "y": {
+          "aggregate": "",
+          "field": "value",
+          "type": "quantitative",
+          "scale": {}
+        },
+        "row": {
+          "field": "location",
+          "type": "nominal"
+        }
+      },
+      "config": {
+        "line": {
+          "point": true
+        },
+        "scale": {
+          "useUnaggregatedDomain": true
+        }
+      },
+     
+              }
+                
+              
+                // Embed the visualization in the container with id `vis,
+                vegaEmbed("#vis13", vlSpec13);
+             
+    
+                </script></div>
+<h3>3.Somchair</h3>  
+<p>Somchair has spikes in trend recently in chemicals like Lead,Total Nitrogen which suggest that it can be one of the new dumping site
+  along with Tensanee along the years. </p> 
+  <table style="margin-left: auto; margin-right: auto;">
+      <tbody>
+                <tr>
+<div id="vish11" style="text-align:center;">
+
+<script>
+// Assign the specification to a local variable vlSpec.
+var vlSpech11 = {
+"$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+"width": 500,
+"height": 80,
+
+"data": {
+  "name": "file",
+  "url": "file.csv"
+},
+"title":"Coliforms",
+"mark": "bar",
+"encoding": {
+  "x": {
+    "field": "dates",
+    "type": "temporal",
+    "scale": {}
+  },
+  "row": {
+    "field": "location",
+    "type": "nominal"
+  },
+  "y": {
+    "field": "value",
+    "type": "quantitative",
+    "scale": {}
+  }
+},
+"config": {
+  "line": {
+    "point": true
+  },
+  "scale": {
+    "useUnaggregatedDomain": true
+  }
+},
+"transform": [
+  {
+    "filter": {
+      "field": "measure",
+      "oneOf": [
+        "Fecal coliforms"
+      ]
+    }
+  },
+  {
+    "filter": {
+      "field": "location",
+      "oneOf": [
+        "Somchair"
+      ]
+    }
+  }
+]
+        }
+          
+        
+          // Embed the visualization in the container with id `vis,
+          vegaEmbed("#vish11", vlSpech11);
+       
+
+          </script></div>
+</tr>
+<tr>
+      <div id="vish12" style="text-align:center;">
+
+              <script>
+              // Assign the specification to a local variable vlSpec.
+              var vlSpech12 = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+              "width": 500,
+              "height": 80,
+ "data": {
+  "name": "file",
+  "url": "file.csv"
+},
+"title":"Total Hardness",
+"mark": "bar",
+"encoding": {
+  "x": {
+    "field": "dates",
+    "type": "temporal",
+    "scale": {}
+  },
+  "row": {
+    "field": "location",
+    "type": "nominal"
+  },
+  "y": {
+    "field": "value",
+    "type": "quantitative",
+    "scale": {}
+  }
+},
+"config": {
+  "line": {
+    "point": true
+  },
+  "scale": {
+    "useUnaggregatedDomain": true
+  }
+},
+"transform": [
+  {
+    "filter": {
+      "field": "measure",
+      "oneOf": [
+        "Total hardness"
+      ]
+    }
+  },
+  {
+    "filter": {
+      "field": "location",
+      "oneOf": [
+        "Somchair"
+      ]
+    }
+  }
+]
+                      }
+                        
+                      
+                        // Embed the visualization in the container with id `vis,
+                        vegaEmbed("#vish12", vlSpech12);
+                     
+            
+                        </script></div>
+</tr>
+<tr>
+
+      <div id="vish13" style="text-align:center;">
+
+              <script>
+              // Assign the specification to a local variable vlSpec.
+              var vlSpech13 = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+              "width": 500,
+              "height": 80,
+              "data": {
+  "name": "file",
+  "url": "file.csv"
+},
+"title":"Lead",
+"mark": "bar",
+"encoding": {
+  "x": {
+    "field": "dates",
+    "type": "temporal",
+    "scale": {}
+  },
+  "row": {
+    "field": "location",
+    "type": "nominal"
+  },
+  "y": {
+    "field": "value",
+    "type": "quantitative",
+    "scale": {}
+  }
+},
+"config": {
+  "line": {
+    "point": true
+  },
+  "scale": {
+    "useUnaggregatedDomain": true
+  }
+},
+"transform": [
+  {
+    "filter": {
+      "field": "measure",
+      "oneOf": [
+        "Carbonates"
+      ]
+    }
+  },
+  {
+    "filter": {
+      "field": "location",
+      "oneOf": [
+        "Somchair"
+      ]
+    }
+  }
+]
+                      }
+                        
+                      
+                        // Embed the visualization in the container with id `vis,
+                        vegaEmbed("#vish13", vlSpech13);
+                     
+            
+                        </script></div>
+
+</tr>
+<tr>
+      <div id="vish14" style="text-align:center;">
+
+              <script>
+              // Assign the specification to a local variable vlSpec.
+              var vlSpech14 = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+              "width": 500,
+              "height": 80,
+              
+              "data": {
+  "name": "file",
+  "url": "file.csv"
+},
+"title":"Mercury",
+"mark": "bar",
+"encoding": {
+  "x": {
+    "field": "dates",
+    "type": "temporal",
+    "scale": {}
+  },
+  "row": {
+    "field": "location",
+    "type": "nominal"
+  },
+  "y": {
+    "field": "value",
+    "type": "quantitative",
+    "scale": {}
+  }
+},
+"config": {
+  "line": {
+    "point": true
+  },
+  "scale": {
+    "useUnaggregatedDomain": true
+  }
+},
+"transform": [
+  {
+    "filter": {
+      "field": "measure",
+      "oneOf": [
+        "Total coliforms"
+      ]
+    }
+  },
+  {
+    "filter": {
+      "field": "location",
+      "oneOf": [
+        "Somchair"
+      ]
+    }
+  }
+]      }
+                        
+                      
+                        // Embed the visualization in the container with id `vis,
+                        vegaEmbed("#vish14", vlSpech14);
+                     
+            
+                        </script></div>
+</tr>
+
+
+</tbody></table>
+
+<p>The high values of coliforms and total hardness of water sample of Somchair can be due to some illicit activity 
+  happening at the site,which may cause harm to Pipits.The creation of new dumping sites like Somchair and Tansanee along with the old Kohsoom
+might be the reason for Pipits to leave the water.</p>
+<h2>Concern for the Pipit</h2>
+<p1>So,as it is been observed  that their is an increasing trend of depletion of oxygen saturation and increase in the hardness of water
+  along with the presence of coliform and toxic metals like lead, mercury. These factors are highly influencing the wild life reserve and Pipits in the water. </p1>
+      <h2>Proposed changes to sampling strategy</h2> 
+      <h3>-Regular sampling frequency</h3>
+        <p>Redundancy in the chemicals collected can also be understood if the sampling frequencies are aligned across locations,
+           as correlations of different chemical measurements can be checked upon and thereby help narrow down on the chemicals to focus on.
+           The sampling frequency must be increased to weekly rathar than monthly.And the data needs to be collected from all the sites regularly,
+           as it is observed that new dumping sites are been created.And to keep a check on them it would be better have more frequent sampling sets which helps in getting right insights.
+          </p>
+          <div id="vis14" style="text-align:center;">
+
+              <script>
+              // Assign the specification to a local variable vlSpec.
+              var vlSpec14 = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+              "width": 800,
+              "height": 150,
+              "data": {
+                "name": "file",
+                "url": "file.csv"
+              },
+              "mark": "point",
+              "encoding": {
+                "x": {
+                  "timeUnit": "yearmonthdate",
+                  "field": "dates",
+                  "type": "temporal",
+                  "scale": {}
+                },
+                "y": {
+                  "aggregate": "count",
+                  "field": "*",
+                  "type": "quantitative",
+                  "scale": {}
+                },
+                "row": {
+                  "field": "location",
+                  "type": "nominal"
+                },
+                "size": {
+                  "aggregate": "mean",
+                  "field": "value",
+                  "type": "quantitative"
+                }
+              },
+              "config": {
+                "line": {
+                  "point": true
+                },
+                "scale": {
+                  "useUnaggregatedDomain": true
+                }
+              }
+                      }
+                        
+                      
+                        // Embed the visualization in the container with id `vis,
+                        vegaEmbed("#vis14", vlSpec14);
+                     
+            
+                        </script></div>
+</body>
+</html>

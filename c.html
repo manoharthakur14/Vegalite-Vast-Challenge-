@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<head>
+  <title>Vast Challenge</title>
+  <meta charset="utf-8">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@4.3.0/build/vega.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc8/build/vega-lite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.20.0/build/vega-embed.js"></script>
+
+  <style media="screen">
+    /* Add space between Vega-Embed links  */
+    .vega-actions a {
+      margin-right: 5px;
+    }
+  </style>
+  <style>.vega-actions {display: none}</style>
+</head>
+<body>
+    <style>.vega-actions {display: none}</style>
+    <h3>3.After reviewing the data, do any of your findings cause particular concern for the Pipit or other wildlife? Would you suggest any changes in the sampling strategy to better understand the waterways situation 
+            in the Preserve? Your submission for this question should contain no more than 6 images and 500 words </h3>        
+             <h3>1.Oxygen Saturation Levels </h3>
+             <p>Birds and wildlife feed off water, and Oxygen is essential for any living organism, 
+               but Oxygen saturation in water is clearly depleting lower near Kohsoom and Tansanee.</p> 
+               <p>The oxygen saturation at Kannika,Busarakhan and Somchair was very low in the begining but it gradually increased.
+                 The line chart here is helpful in identifying the trens from the past to recent times.The line chart used will be helpful in identifying the patterns. </p>
+               <div id="vis12" style="text-align:center;">
+          
+                  <script>
+                  // Assign the specification to a local variable vlSpec.
+                  var vlSpec12 = {
+                  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                  "width": 800,
+                  "height": 500,
+                  "data": {
+                    "name": "file",
+                    "url": "file.csv"
+                  },
+                  "mark": "line",
+                  "encoding": {
+                    "x": {
+                      "timeUnit": "yearmonthdate",
+                      "field": "dates",
+                      "type": "temporal",
+                      "scale": {}
+                    },
+                    "y": {
+                      "aggregate": "mean",
+                      "field": "value",
+                      "type": "quantitative",
+                      "scale": {}
+                    },
+                    "color": {
+                      "field": "location",
+                      "type": "nominal"
+                    }
+                  },
+                  "config": {
+                    "line": {
+                      "point": true
+                    },
+                    "scale": {
+                      "useUnaggregatedDomain": true
+                    }
+                  },
+                  "transform": [
+                    {
+                      "filter": {
+                        "field": "measure",
+                        "oneOf": [
+                          "Oxygen saturation"
+                        ]
+                      }
+                    }
+                  ]
+                          }
+                            
+                          
+                            // Embed the visualization in the container with id `vis,
+                            vegaEmbed("#vis12", vlSpec12);
+                         
+                
+                            </script></div>    
+            <h3>2.Release of hot effluents</h3>  
+            <p>The trend line shows an uptrend at Tansanee as compared to the other locations. The temperature spike of 34C was in August 2016.
+              The possible reason for the temperature spike may be a factory which uses Tansanee as a water source for their cooling towers, 
+              and discharges hot effluents onto the water.
+          </p> 
+            <h2>Water temperature trends</h2>
+            <div id="vis13" style="text-align:center;">
+          
+                <script>
+                // Assign the specification to a local variable vlSpec.
+                var vlSpec13 = {
+                "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                "width": 800,
+                "height": 100,
+                
+                "data": {
+                  "name": "water",
+                  "url": "water.csv"
+                },
+                "mark": "line",
+                "encoding": {
+                  "x": {
+                    "timeUnit": "yearmonthdate",
+                    "field": "dates",
+                    "type": "temporal",
+                    "scale": {}
+                  },
+                  "y": {
+                    "aggregate": "",
+                    "field": "value",
+                    "type": "quantitative",
+                    "scale": {}
+                  },
+                  "row": {
+                    "field": "location",
+                    "type": "nominal"
+                  }
+                },
+                "config": {
+                  "line": {
+                    "point": true
+                  },
+                  "scale": {
+                    "useUnaggregatedDomain": true
+                  }
+                },
+               
+                        }
+                          
+                        
+                          // Embed the visualization in the container with id `vis,
+                          vegaEmbed("#vis13", vlSpec13);
+                       
+              
+                          </script></div>
+          <h3>3.Somchair</h3>  
+          <p>Somchair has spikes in trend recently in chemicals like Lead,Total Nitrogen which suggest that it can be one of the new dumping site
+            along with Tensanee along the years.Bar chart is used to visualize to show the spikes with the dependency of the previous value.</p> 
+            <table style="margin-left: auto; margin-right: auto;">
+                <tbody>
+                          <tr>
+          <div id="vish11" style="text-align:center;">
+          
+          <script>
+          // Assign the specification to a local variable vlSpec.
+          var vlSpech11 = {
+          "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+          "width": 500,
+          "height": 80,
+          
+          "data": {
+            "name": "file",
+            "url": "file.csv"
+          },
+          "title":"Coliforms",
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "dates",
+              "type": "temporal",
+              "scale": {}
+            },
+            "row": {
+              "field": "location",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "value",
+              "type": "quantitative",
+              "scale": {}
+            }
+          },
+          "config": {
+            "line": {
+              "point": true
+            },
+            "scale": {
+              "useUnaggregatedDomain": true
+            }
+          },
+          "transform": [
+            {
+              "filter": {
+                "field": "measure",
+                "oneOf": [
+                  "Fecal coliforms"
+                ]
+              }
+            },
+            {
+              "filter": {
+                "field": "location",
+                "oneOf": [
+                  "Somchair"
+                ]
+              }
+            }
+          ]
+                  }
+                    
+                  
+                    // Embed the visualization in the container with id `vis,
+                    vegaEmbed("#vish11", vlSpech11);
+                 
+          
+                    </script></div>
+          </tr>
+          <tr>
+                <div id="vish12" style="text-align:center;">
+          
+                        <script>
+                        // Assign the specification to a local variable vlSpec.
+                        var vlSpech12 = {
+                        "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                        "width": 500,
+                        "height": 80,
+           "data": {
+            "name": "file",
+            "url": "file.csv"
+          },
+          "title":"Total Hardness",
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "dates",
+              "type": "temporal",
+              "scale": {}
+            },
+            "row": {
+              "field": "location",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "value",
+              "type": "quantitative",
+              "scale": {}
+            }
+          },
+          "config": {
+            "line": {
+              "point": true
+            },
+            "scale": {
+              "useUnaggregatedDomain": true
+            }
+          },
+          "transform": [
+            {
+              "filter": {
+                "field": "measure",
+                "oneOf": [
+                  "Total hardness"
+                ]
+              }
+            },
+            {
+              "filter": {
+                "field": "location",
+                "oneOf": [
+                  "Somchair"
+                ]
+              }
+            }
+          ]
+                                }
+                                  
+                                
+                                  // Embed the visualization in the container with id `vis,
+                                  vegaEmbed("#vish12", vlSpech12);
+                               
+                      
+                                  </script></div>
+          </tr>
+          <tr>
+          
+                <div id="vish13" style="text-align:center;">
+          
+                        <script>
+                        // Assign the specification to a local variable vlSpec.
+                        var vlSpech13 = {
+                        "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                        "width": 500,
+                        "height": 80,
+                        "data": {
+            "name": "file",
+            "url": "file.csv"
+          },
+          "title":"Lead",
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "dates",
+              "type": "temporal",
+              "scale": {}
+            },
+            "row": {
+              "field": "location",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "value",
+              "type": "quantitative",
+              "scale": {}
+            }
+          },
+          "config": {
+            "line": {
+              "point": true
+            },
+            "scale": {
+              "useUnaggregatedDomain": true
+            }
+          },
+          "transform": [
+            {
+              "filter": {
+                "field": "measure",
+                "oneOf": [
+                  "Carbonates"
+                ]
+              }
+            },
+            {
+              "filter": {
+                "field": "location",
+                "oneOf": [
+                  "Somchair"
+                ]
+              }
+            }
+          ]
+                                }
+                                  
+                                
+                                  // Embed the visualization in the container with id `vis,
+                                  vegaEmbed("#vish13", vlSpech13);
+                               
+                      
+                                  </script></div>
+          
+          </tr>
+          <tr>
+                <div id="vish14" style="text-align:center;">
+          
+                        <script>
+                        // Assign the specification to a local variable vlSpec.
+                        var vlSpech14 = {
+                        "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                        "width": 500,
+                        "height": 80,
+                        
+                        "data": {
+            "name": "file",
+            "url": "file.csv"
+          },
+          "title":"Mercury",
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "dates",
+              "type": "temporal",
+              "scale": {}
+            },
+            "row": {
+              "field": "location",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "value",
+              "type": "quantitative",
+              "scale": {}
+            }
+          },
+          "config": {
+            "line": {
+              "point": true
+            },
+            "scale": {
+              "useUnaggregatedDomain": true
+            }
+          },
+          "transform": [
+            {
+              "filter": {
+                "field": "measure",
+                "oneOf": [
+                  "Total coliforms"
+                ]
+              }
+            },
+            {
+              "filter": {
+                "field": "location",
+                "oneOf": [
+                  "Somchair"
+                ]
+              }
+            }
+          ]      }
+                                  
+                                
+                                  // Embed the visualization in the container with id `vis,
+                                  vegaEmbed("#vish14", vlSpech14);
+                               
+                      
+                                  </script></div>
+          </tr>
+          
+          
+          </tbody></table>
+          
+          <p>The high values of coliforms and total hardness of water sample of Somchair can be due to some illicit activity 
+            happening at the site,which may cause harm to Pipits.The creation of new dumping sites like Somchair and Tansanee along with the old Kohsoom
+          might be the reason for Pipits to leave the water.</p>
+          <h2>Concern for the Pipit</h2>
+          <p1>So,as it is been observed  that their is an increasing trend of depletion of oxygen saturation and increase in the hardness of water
+            along with the presence of coliform and toxic metals like lead, mercury. These factors are highly influencing the wild life reserve and Pipits in the water. </p1>
+                <h2>Proposed changes to sampling strategy</h2> 
+                <h3>-Regular sampling frequency</h3>
+                  <p>Redundancy in the chemicals collected can also be understood if the sampling frequencies are aligned across locations,
+                     as correlations of different chemical measurements can be checked upon and thereby help narrow down on the chemicals to focus on.
+                     The sampling frequency must be increased to weekly rathar than monthly.And the data needs to be collected from all the sites regularly,
+                     as it is observed that new dumping sites are been created.And to keep a check on them it would be better have more frequent sampling sets which helps in getting right insights.
+                    </p>
+                    <div id="vis14" style="text-align:center;">
+          
+                        <script>
+                        // Assign the specification to a local variable vlSpec.
+                        var vlSpec14 = {
+                        "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+                        "width": 800,
+                        "height": 150,
+                        "data": {
+                          "name": "file",
+                          "url": "file.csv"
+                        },
+                        "mark": "point",
+                        "encoding": {
+                          "x": {
+                            "timeUnit": "yearmonthdate",
+                            "field": "dates",
+                            "type": "temporal",
+                            "scale": {}
+                          },
+                          "y": {
+                            "aggregate": "count",
+                            "field": "*",
+                            "type": "quantitative",
+                            "scale": {}
+                          },
+                          "row": {
+                            "field": "location",
+                            "type": "nominal"
+                          },
+                          "size": {
+                            "aggregate": "mean",
+                            "field": "value",
+                            "type": "quantitative"
+                          }
+                        },
+                        "config": {
+                          "line": {
+                            "point": true
+                          },
+                          "scale": {
+                            "useUnaggregatedDomain": true
+                          }
+                        }
+                                }
+                                  
+                                
+                                  // Embed the visualization in the container with id `vis,
+                                  vegaEmbed("#vis14", vlSpec14);
+                               
+                      
+                                  </script></div>
+</body>
+</html>
